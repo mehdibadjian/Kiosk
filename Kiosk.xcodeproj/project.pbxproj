@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D1B2FDD214A6518002C1141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FDC214A6518002C1141 /* AppDelegate.swift */; };
-		3D1B2FDF214A6518002C1141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FDE214A6518002C1141 /* ViewController.swift */; };
-		3D1B2FE2214A6518002C1141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FE0214A6518002C1141 /* Main.storyboard */; };
-		3D1B2FE4214A651A002C1141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FE3214A651A002C1141 /* Assets.xcassets */; };
-		3D1B2FE7214A651A002C1141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FE5214A651A002C1141 /* LaunchScreen.storyboard */; };
+		3D1B2FFF214A6663002C1141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF5214A6663002C1141 /* ViewController.swift */; };
+		3D1B3000214A6663002C1141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF6214A6663002C1141 /* AppDelegate.swift */; };
+		3D1B3001214A6663002C1141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF8214A6663002C1141 /* Assets.xcassets */; };
+		3D1B3002214A6663002C1141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF9214A6663002C1141 /* LaunchScreen.storyboard */; };
+		3D1B3003214A6663002C1141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FFB214A6663002C1141 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D1B2FD9214A6517002C1141 /* Kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1B2FDC214A6518002C1141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D1B2FDE214A6518002C1141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D1B2FE1214A6518002C1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D1B2FE3214A651A002C1141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3D1B2FE6214A651A002C1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3D1B2FE8214A651A002C1141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1B2FF5214A6663002C1141 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D1B2FF6214A6663002C1141 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D1B2FF8214A6663002C1141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D1B2FFA214A6663002C1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D1B2FFC214A6663002C1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D1B2FFD214A6663002C1141 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		3D1B2FDB214A6517002C1141 /* Kiosk */ = {
 			isa = PBXGroup;
 			children = (
-				3D1B2FDC214A6518002C1141 /* AppDelegate.swift */,
-				3D1B2FDE214A6518002C1141 /* ViewController.swift */,
-				3D1B2FE0214A6518002C1141 /* Main.storyboard */,
-				3D1B2FE3214A651A002C1141 /* Assets.xcassets */,
-				3D1B2FE5214A651A002C1141 /* LaunchScreen.storyboard */,
-				3D1B2FE8214A651A002C1141 /* Info.plist */,
+				3D1B2FF4214A6663002C1141 /* Source */,
+				3D1B2FFE214A6663002C1141 /* Spec */,
+				3D1B2FF7214A6663002C1141 /* SupportingFiles */,
 			);
 			path = Kiosk;
+			sourceTree = "<group>";
+		};
+		3D1B2FF4214A6663002C1141 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3D1B2FF6214A6663002C1141 /* AppDelegate.swift */,
+				3D1B2FF5214A6663002C1141 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3D1B2FF7214A6663002C1141 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3D1B2FF8214A6663002C1141 /* Assets.xcassets */,
+				3D1B2FF9214A6663002C1141 /* LaunchScreen.storyboard */,
+				3D1B2FFB214A6663002C1141 /* Main.storyboard */,
+				3D1B2FFD214A6663002C1141 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3D1B2FFE214A6663002C1141 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spec;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1B2FE7214A651A002C1141 /* LaunchScreen.storyboard in Resources */,
-				3D1B2FE4214A651A002C1141 /* Assets.xcassets in Resources */,
-				3D1B2FE2214A6518002C1141 /* Main.storyboard in Resources */,
+				3D1B3003214A6663002C1141 /* Main.storyboard in Resources */,
+				3D1B3001214A6663002C1141 /* Assets.xcassets in Resources */,
+				3D1B3002214A6663002C1141 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,28 +159,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1B2FDF214A6518002C1141 /* ViewController.swift in Sources */,
-				3D1B2FDD214A6518002C1141 /* AppDelegate.swift in Sources */,
+				3D1B3000214A6663002C1141 /* AppDelegate.swift in Sources */,
+				3D1B2FFF214A6663002C1141 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3D1B2FE0214A6518002C1141 /* Main.storyboard */ = {
+		3D1B2FF9214A6663002C1141 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3D1B2FE1214A6518002C1141 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3D1B2FE5214A651A002C1141 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D1B2FE6214A651A002C1141 /* Base */,
+				3D1B2FFA214A6663002C1141 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D1B2FFB214A6663002C1141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1B2FFC214A6663002C1141 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQRPRAG88V;
-				INFOPLIST_FILE = Kiosk/Info.plist;
+				INFOPLIST_FILE = Kiosk/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.mb.Kiosk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EQRPRAG88V;
-				INFOPLIST_FILE = Kiosk/Info.plist;
+				INFOPLIST_FILE = Kiosk/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.mb.Kiosk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
