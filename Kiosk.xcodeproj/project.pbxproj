@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D1B2FFF214A6663002C1141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF5214A6663002C1141 /* ViewController.swift */; };
 		3D1B3000214A6663002C1141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF6214A6663002C1141 /* AppDelegate.swift */; };
 		3D1B3001214A6663002C1141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF8214A6663002C1141 /* Assets.xcassets */; };
 		3D1B3002214A6663002C1141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF9214A6663002C1141 /* LaunchScreen.storyboard */; };
 		3D1B3003214A6663002C1141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FFB214A6663002C1141 /* Main.storyboard */; };
+		3D1B300B214A8911002C1141 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300A214A8911002C1141 /* BookingViewController.swift */; };
+		3D1B300D214A891E002C1141 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300C214A891E002C1141 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D1B2FD9214A6517002C1141 /* Kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1B2FF5214A6663002C1141 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D1B2FF6214A6663002C1141 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D1B2FF8214A6663002C1141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D1B2FFA214A6663002C1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D1B2FFC214A6663002C1141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D1B2FFD214A6663002C1141 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1B300A214A8911002C1141 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		3D1B300C214A891E002C1141 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				3D1B2FF6214A6663002C1141 /* AppDelegate.swift */,
-				3D1B2FF5214A6663002C1141 /* ViewController.swift */,
+				3D1B3007214A8736002C1141 /* Booking */,
+				3D1B3009214A8889002C1141 /* BookingReview */,
+				3D1B3006214A8736002C1141 /* History */,
+				3D1B3008214A8736002C1141 /* Pickup */,
+				3D1B3005214A8736002C1141 /* Tabbar */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -86,6 +92,43 @@
 			children = (
 			);
 			path = Spec;
+			sourceTree = "<group>";
+		};
+		3D1B3005214A8736002C1141 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		3D1B3006214A8736002C1141 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				3D1B300C214A891E002C1141 /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		3D1B3007214A8736002C1141 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				3D1B300A214A8911002C1141 /* BookingViewController.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		3D1B3008214A8736002C1141 /* Pickup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pickup;
+			sourceTree = "<group>";
+		};
+		3D1B3009214A8889002C1141 /* BookingReview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookingReview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1B300D214A891E002C1141 /* HistoryViewController.swift in Sources */,
+				3D1B300B214A8911002C1141 /* BookingViewController.swift in Sources */,
 				3D1B3000214A6663002C1141 /* AppDelegate.swift in Sources */,
-				3D1B2FFF214A6663002C1141 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
