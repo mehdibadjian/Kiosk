@@ -8,29 +8,31 @@
 
 import UIKit
 
+let baseUrl = "http://localhost:3000/"
+
 class APIAdaptor: NSObject {
-  func get(urlString: String, completionHandler: @escaping (URLResponse?, Error?) -> ()) {
-    let url = URL(string: urlString)!
+  func get(urlString: String, completionHandler: @escaping (URLResponse?, Data?, Error?) -> ()) {
+    let url = URL(string: baseUrl+urlString)!
     var request = URLRequest(url: url)
     request.httpMethod = "GET"
     let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
       if let error = error {
-        completionHandler(nil,error)
+        completionHandler(nil,nil,error)
         return
       }
       if let response = response as? HTTPURLResponse,
         (200...299).contains(response.statusCode) {
-        completionHandler(response,error)
+        completionHandler(response,data,error)
       }
       else {
-        completionHandler(response,error)
+        completionHandler(response,data,error)
       }
     }
     task.resume()
   }
   
   func post(urlString: String, parameters: Encodable, completionHandler: @escaping (URLResponse?, Error?) -> ()) {
-    let url = URL(string: urlString)!
+    let url = URL(string: baseUrl+urlString)!
     var request = URLRequest(url: url)
     request.httpMethod = "POST"
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")

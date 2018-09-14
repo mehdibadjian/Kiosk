@@ -15,7 +15,27 @@
 		3D1B300D214A891E002C1141 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300C214A891E002C1141 /* HistoryViewController.swift */; };
 		3D1B3010214AA006002C1141 /* APIAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300F214AA006002C1141 /* APIAdaptor.swift */; };
 		3D1B3012214AA48A002C1141 /* ServicesJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */; };
+		3D1B3014214B50EF002C1141 /* ServivesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3013214B50EF002C1141 /* ServivesDataModel.swift */; };
+		3D1B301C214B51DD002C1141 /* KioskBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B301B214B51DD002C1141 /* KioskBookingTests.swift */; };
+		3D1B302D214B63CC002C1141 /* KioskNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B302C214B63CC002C1141 /* KioskNetworkTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D1B301E214B51DD002C1141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D1B2FD1214A6517002C1141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1B2FD8214A6517002C1141;
+			remoteInfo = Kiosk;
+		};
+		3D1B302F214B63CC002C1141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D1B2FD1214A6517002C1141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1B2FD8214A6517002C1141;
+			remoteInfo = Kiosk;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3D1B2FD9214A6517002C1141 /* Kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +48,31 @@
 		3D1B300C214A891E002C1141 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		3D1B300F214AA006002C1141 /* APIAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAdaptor.swift; sourceTree = "<group>"; };
 		3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesJsonModel.swift; sourceTree = "<group>"; };
+		3D1B3013214B50EF002C1141 /* ServivesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServivesDataModel.swift; sourceTree = "<group>"; };
+		3D1B3019214B51DD002C1141 /* KioskBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1B301B214B51DD002C1141 /* KioskBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskBookingTests.swift; sourceTree = "<group>"; };
+		3D1B301D214B51DD002C1141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1B302A214B63CC002C1141 /* KioskNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1B302C214B63CC002C1141 /* KioskNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskNetworkTests.swift; sourceTree = "<group>"; };
+		3D1B302E214B63CC002C1141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D1B2FD6214A6517002C1141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1B3016214B51DD002C1141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1B3027214B63CC002C1141 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				3D1B2FDB214A6517002C1141 /* Kiosk */,
+				3D1B301A214B51DD002C1141 /* KioskBookingTests */,
+				3D1B302B214B63CC002C1141 /* KioskNetworkTests */,
 				3D1B2FDA214A6517002C1141 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				3D1B2FD9214A6517002C1141 /* Kiosk.app */,
+				3D1B3019214B51DD002C1141 /* KioskBookingTests.xctest */,
+				3D1B302A214B63CC002C1141 /* KioskNetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +164,7 @@
 			children = (
 				3D1B300A214A8911002C1141 /* BookingViewController.swift */,
 				3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */,
+				3D1B3013214B50EF002C1141 /* ServivesDataModel.swift */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -145,6 +191,24 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		3D1B301A214B51DD002C1141 /* KioskBookingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D1B301B214B51DD002C1141 /* KioskBookingTests.swift */,
+				3D1B301D214B51DD002C1141 /* Info.plist */,
+			);
+			path = KioskBookingTests;
+			sourceTree = "<group>";
+		};
+		3D1B302B214B63CC002C1141 /* KioskNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D1B302C214B63CC002C1141 /* KioskNetworkTests.swift */,
+				3D1B302E214B63CC002C1141 /* Info.plist */,
+			);
+			path = KioskNetworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +229,42 @@
 			productReference = 3D1B2FD9214A6517002C1141 /* Kiosk.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3D1B3018214B51DD002C1141 /* KioskBookingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1B3020214B51DD002C1141 /* Build configuration list for PBXNativeTarget "KioskBookingTests" */;
+			buildPhases = (
+				3D1B3015214B51DD002C1141 /* Sources */,
+				3D1B3016214B51DD002C1141 /* Frameworks */,
+				3D1B3017214B51DD002C1141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D1B301F214B51DD002C1141 /* PBXTargetDependency */,
+			);
+			name = KioskBookingTests;
+			productName = KioskBookingTests;
+			productReference = 3D1B3019214B51DD002C1141 /* KioskBookingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D1B3029214B63CC002C1141 /* KioskNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1B3031214B63CC002C1141 /* Build configuration list for PBXNativeTarget "KioskNetworkTests" */;
+			buildPhases = (
+				3D1B3026214B63CC002C1141 /* Sources */,
+				3D1B3027214B63CC002C1141 /* Frameworks */,
+				3D1B3028214B63CC002C1141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D1B3030214B63CC002C1141 /* PBXTargetDependency */,
+			);
+			name = KioskNetworkTests;
+			productName = KioskNetworkTests;
+			productReference = 3D1B302A214B63CC002C1141 /* KioskNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,6 +277,14 @@
 				TargetAttributes = {
 					3D1B2FD8214A6517002C1141 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					3D1B3018214B51DD002C1141 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3D1B2FD8214A6517002C1141;
+					};
+					3D1B3029214B63CC002C1141 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3D1B2FD8214A6517002C1141;
 					};
 				};
 			};
@@ -194,6 +302,8 @@
 			projectRoot = "";
 			targets = (
 				3D1B2FD8214A6517002C1141 /* Kiosk */,
+				3D1B3018214B51DD002C1141 /* KioskBookingTests */,
+				3D1B3029214B63CC002C1141 /* KioskNetworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +319,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D1B3017214B51DD002C1141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1B3028214B63CC002C1141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,15 +340,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1B3012214AA48A002C1141 /* ServicesJsonModel.swift in Sources */,
+				3D1B3014214B50EF002C1141 /* ServivesDataModel.swift in Sources */,
 				3D1B3010214AA006002C1141 /* APIAdaptor.swift in Sources */,
 				3D1B300D214A891E002C1141 /* HistoryViewController.swift in Sources */,
 				3D1B300B214A8911002C1141 /* BookingViewController.swift in Sources */,
 				3D1B3000214A6663002C1141 /* AppDelegate.swift in Sources */,
-				3D1B3012214AA48A002C1141 /* ServicesJsonModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1B3015214B51DD002C1141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1B301C214B51DD002C1141 /* KioskBookingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1B3026214B63CC002C1141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1B302D214B63CC002C1141 /* KioskNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D1B301F214B51DD002C1141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D1B2FD8214A6517002C1141 /* Kiosk */;
+			targetProxy = 3D1B301E214B51DD002C1141 /* PBXContainerItemProxy */;
+		};
+		3D1B3030214B63CC002C1141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D1B2FD8214A6517002C1141 /* Kiosk */;
+			targetProxy = 3D1B302F214B63CC002C1141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3D1B2FF9214A6663002C1141 /* LaunchScreen.storyboard */ = {
@@ -302,6 +456,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -396,6 +551,86 @@
 			};
 			name = Release;
 		};
+		3D1B3021214B51DD002C1141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQRPRAG88V;
+				INFOPLIST_FILE = KioskBookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mb.KioskBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiosk.app/Kiosk";
+			};
+			name = Debug;
+		};
+		3D1B3022214B51DD002C1141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQRPRAG88V;
+				INFOPLIST_FILE = KioskBookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mb.KioskBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiosk.app/Kiosk";
+			};
+			name = Release;
+		};
+		3D1B3032214B63CC002C1141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQRPRAG88V;
+				INFOPLIST_FILE = KioskNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mb.KioskNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiosk.app/Kiosk";
+			};
+			name = Debug;
+		};
+		3D1B3033214B63CC002C1141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQRPRAG88V;
+				INFOPLIST_FILE = KioskNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mb.KioskNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiosk.app/Kiosk";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +648,24 @@
 			buildConfigurations = (
 				3D1B2FEC214A651A002C1141 /* Debug */,
 				3D1B2FED214A651A002C1141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1B3020214B51DD002C1141 /* Build configuration list for PBXNativeTarget "KioskBookingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1B3021214B51DD002C1141 /* Debug */,
+				3D1B3022214B51DD002C1141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1B3031214B63CC002C1141 /* Build configuration list for PBXNativeTarget "KioskNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1B3032214B63CC002C1141 /* Debug */,
+				3D1B3033214B63CC002C1141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

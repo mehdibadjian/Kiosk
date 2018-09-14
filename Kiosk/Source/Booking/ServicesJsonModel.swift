@@ -9,13 +9,16 @@
 import UIKit
 
 class ServicesJsonModel: Codable {
-  let id : Int?
-  let product_name: String?
-  let price : Int?
-  
+  let productId : Int?
+  let productName: String?
+  let productPrice : Int?
   enum CodingKeys: String, CodingKey {
-    case id = "productId"
-    case product_name = "productName"
-    case price = "productPrice"
+    case productId = "id"
+    case productName = "product_name"
+    case productPrice = "price"
   }
+}
+
+extension ServicesJsonModel {
+
 }
