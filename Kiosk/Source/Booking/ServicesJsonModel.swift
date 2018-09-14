@@ -12,13 +12,12 @@ class ServicesJsonModel: Codable {
   let productId : Int?
   let productName: String?
   let productPrice : Int?
+}
+
+extension ServicesJsonModel {
   enum CodingKeys: String, CodingKey {
     case productId = "id"
     case productName = "product_name"
     case productPrice = "price"
   }
-}
-
-extension ServicesJsonModel {
-
 }

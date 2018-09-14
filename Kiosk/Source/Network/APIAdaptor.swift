@@ -11,7 +11,7 @@ import UIKit
 let baseUrl = "http://localhost:3000/"
 
 class APIAdaptor: NSObject {
-  func get(urlString: String, completionHandler: @escaping (URLResponse?, Data?, Error?) -> ()) {
+  public func get(urlString: String, completionHandler: @escaping (URLResponse?, Data?, Error?) -> ()) {
     let url = URL(string: baseUrl+urlString)!
     var request = URLRequest(url: url)
     request.httpMethod = "GET"
@@ -31,7 +31,7 @@ class APIAdaptor: NSObject {
     task.resume()
   }
   
-  func post(urlString: String, parameters: Encodable, completionHandler: @escaping (URLResponse?, Error?) -> ()) {
+  public func post(urlString: String, parameters: Encodable, completionHandler: @escaping (URLResponse?, Error?) -> ()) {
     let url = URL(string: baseUrl+urlString)!
     var request = URLRequest(url: url)
     request.httpMethod = "POST"

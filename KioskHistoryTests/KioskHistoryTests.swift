@@ -1,6 +1,6 @@
 //
-//  KioskBookingTests.swift
-//  KioskBookingTests
+//  KioskHistoryTests.swift
+//  KioskHistoryTests
 //
 //  Created by Mehdi on 14/09/2018.
 //  Copyright © 2018 Mehdi. All rights reserved.
@@ -9,25 +9,24 @@
 import XCTest
 @testable import Kiosk
 
-var servicesDataModel : ServicesDataModel!
+var historyDataModel : HistoryDataModel!
 
-class KioskBookingTests: XCTestCase {
-    
+class KioskHistoryTests: XCTestCase {
   override func setUp() {
     super.setUp()
-    servicesDataModel = ServicesDataModel()
+    historyDataModel = HistoryDataModel()
   }
 
   override func tearDown() {
     super.tearDown()
-    servicesDataModel = nil
+    historyDataModel = nil
   }
   
-  func testCallToFetchServices() {
-    let promise = expectation(description: "Services API Call Completion Handler")
+  func testCallToFetchHistory() {
+    let promise = expectation(description: "History API Call Completion Handler")
     var urlError : Error?
-    var response : [ServicesJsonModel]?
-    servicesDataModel.fetchBookingServices { (res, error) in
+    var response : [HistoryJsonModel]?
+    HistoryDataModel().fetchHistoryServices { (res, error) in
       urlError = error
       response = res
       promise.fulfill()
@@ -38,7 +37,6 @@ class KioskBookingTests: XCTestCase {
       }
     }
     XCTAssertNil(urlError)
-    XCTAssertEqual(response?.count, 5, "Count of objects are not 5")
+    XCTAssertEqual(response?.count, 2, "Count of objects are not 2")
   }
-    
 }

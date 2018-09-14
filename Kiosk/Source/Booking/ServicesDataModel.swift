@@ -8,9 +8,9 @@
 
 import UIKit
 
-var model : [ServicesJsonModel]?
-
-class ServivesDataModel: NSObject {
+class ServicesDataModel: NSObject {
+  var model : [ServicesJsonModel]?
+  
   func fetchBookingServices(completionHandler: @escaping ([ServicesJsonModel]?, Error?) -> ()) {
     APIAdaptor().get(urlString: "services") { (response, data, error) in
       if let err = error {
@@ -19,9 +19,9 @@ class ServivesDataModel: NSObject {
       else {
         do {
           let decoder = JSONDecoder()
-          model = try decoder.decode([ServicesJsonModel].self, from:
+         self.model = try decoder.decode([ServicesJsonModel].self, from:
             data!)
-          completionHandler(model,error)
+          completionHandler(self.model,error)
         }
         catch let err {
           completionHandler(nil,err)
@@ -39,7 +39,7 @@ class ServivesDataModel: NSObject {
     case 0:
       return 1
     default:
-      return model!.count
+      return self.model!.count
     }
   }
 }
