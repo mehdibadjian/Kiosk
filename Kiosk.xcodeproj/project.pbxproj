@@ -15,6 +15,7 @@
 		3D1B303F214B68A0002C1141 /* KioskHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B303E214B68A0002C1141 /* KioskHistoryTests.swift */; };
 		3D1B304A214B9A7B002C1141 /* HistoryJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3049214B9A7B002C1141 /* HistoryJsonModel.swift */; };
 		3D1B304C214B9A8C002C1141 /* HistoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B304B214B9A8C002C1141 /* HistoryDataModel.swift */; };
+		3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C353214D3B09006B610B /* AlertControllerHelper.swift */; };
 		3D93DB7F214B963C0004A317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF6214A6663002C1141 /* AppDelegate.swift */; };
 		3D93DB80214B963C0004A317 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300A214A8911002C1141 /* BookingViewController.swift */; };
 		3D93DB81214B963C0004A317 /* ServicesJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */; };
@@ -70,6 +71,7 @@
 		3D1B3040214B68A0002C1141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1B3049214B9A7B002C1141 /* HistoryJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryJsonModel.swift; sourceTree = "<group>"; };
 		3D1B304B214B9A8C002C1141 /* HistoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataModel.swift; sourceTree = "<group>"; };
+		3D42C353214D3B09006B610B /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				3D1B2FF6214A6663002C1141 /* AppDelegate.swift */,
 				3D1B3007214A8736002C1141 /* Booking */,
 				3D1B3009214A8889002C1141 /* BookingReview */,
+				3D42C352214D3AF3006B610B /* Helper */,
 				3D1B3006214A8736002C1141 /* History */,
 				3D1B300E214A9FEA002C1141 /* Network */,
 				3D1B3008214A8736002C1141 /* Pickup */,
@@ -242,6 +245,14 @@
 				3D1B3040214B68A0002C1141 /* Info.plist */,
 			);
 			path = KioskHistoryTests;
+			sourceTree = "<group>";
+		};
+		3D42C352214D3AF3006B610B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3D42C353214D3B09006B610B /* AlertControllerHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */,
 				3D93DB7F214B963C0004A317 /* AppDelegate.swift in Sources */,
 				3D93DB80214B963C0004A317 /* BookingViewController.swift in Sources */,
 				3D93DB81214B963C0004A317 /* ServicesJsonModel.swift in Sources */,
