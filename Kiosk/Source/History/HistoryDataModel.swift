@@ -19,6 +19,7 @@ class HistoryDataModel: NSObject {
       else {
         do {
           let decoder = JSONDecoder()
+          decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Custom)
           self.model = try decoder.decode([HistoryJsonModel].self, from:
             data!)
           completionHandler(self.model,error)
@@ -30,6 +31,26 @@ class HistoryDataModel: NSObject {
     })
   }
   
+  func storeOrderWithObject(object : HistoryJsonModel, completionHandler: @escaping (HistoryJsonModel?, Error?) -> ()) {
+    self.apiAdaptor.post(urlString: "history", object) { (response, data, error) in
+      if let err = error {
+        completionHandler(nil,err)
+      }
+      else {
+        do {
+          let decoder = JSONDecoder()
+          decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Custom)
+          let responseModel = try decoder.decode(HistoryJsonModel.self, from:
+            data!)
+          completionHandler(responseModel,error)
+        }
+        catch let err {
+          completionHandler(nil,err)
+        }
+      }
+    }
+  }
+  
   func numberOfSections() -> Int {
     return 1
   }
@@ -37,4 +58,13 @@ class HistoryDataModel: NSObject {
   func numberOfRowForSection(section: Int) -> Int {
     return self.model!.count
   }
+}
+
+extension DateFormatter {
+  static let iso8601Custom: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "dd/MM/yyyy"
+    formatter.calendar = Calendar(identifier: .iso8601)
+    return formatter
+  }()
 }

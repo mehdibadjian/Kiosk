@@ -26,7 +26,7 @@ class KioskHistoryTests: XCTestCase {
     let promise = expectation(description: "History API Call Completion Handler")
     var urlError : Error?
     var response : [HistoryJsonModel]?
-    HistoryDataModel().fetchHistoryServices { (res, error) in
+    historyDataModel.fetchHistoryServices { (res, error) in
       urlError = error
       response = res
       promise.fulfill()
@@ -37,6 +37,34 @@ class KioskHistoryTests: XCTestCase {
       }
     }
     XCTAssertNil(urlError)
-    XCTAssertEqual(response?.count, 2, "Count of objects are not 2")
+    XCTAssertNotEqual(response?.count, 0, "Count of objects is 0")
+  }
+  
+  func testCallToStoreOrder() {
+    let promise = expectation(description: "History API Call Completion Handler")
+    var urlError : Error?
+    var response : HistoryJsonModel?
+    let request = HistoryJsonModel()
+    request.creationDate = Date.init(timeIntervalSinceNow: 0)
+    request.bookingType = "express"
+    request.totalPrice = "100"
+    var service = ExtraService()
+    service.name = "test"
+    service.price = 10
+    service.quantity = 10
+    service.serviceId = 1
+    request.extraServices = [service]
+    historyDataModel.storeOrderWithObject(object: request) { (res, error) in
+      urlError = error
+      response = res
+      promise.fulfill()
+    }
+    waitForExpectations(timeout: 5) { (error) in
+      if let err = error {
+        XCTFail("Failed \(err.localizedDescription)")
+      }
+    }
+    XCTAssertNil(urlError)
+    XCTAssertNotEqual(response?.bookingId, nil, "Order failed to store")
   }
 }

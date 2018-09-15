@@ -8,11 +8,11 @@
 
 import UIKit
 
-class extraService : Codable {
-  let name : String?
-  let serviceId : Int?
-  let quantity : Int?
-  let price : Int?
+struct ExtraService : Codable {
+  var name : String?
+  var serviceId : Float?
+  var quantity : Float?
+  var price : Float?
   
   enum CodingKeys: String, CodingKey {
     case name
@@ -23,11 +23,11 @@ class extraService : Codable {
 }
 
 class HistoryJsonModel: Codable {
-  let creationDate : Date? = nil
-  let totalPrice: Int? = nil
-  let bookingType : String? = nil
-  let bookingId : Int? = nil
-  let extraServices : [extraService]? = nil
+  var creationDate : Date?
+  var totalPrice: String?
+  var bookingType : String?
+  var bookingId : Float?
+  var extraServices : [ExtraService]?
   
   enum CodingKeys: String, CodingKey {
     case creationDate = "issued_date_time"
