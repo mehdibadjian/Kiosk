@@ -31,16 +31,11 @@ class ServicesDataModel: NSObject {
   }
   
   func numberOfSections() -> Int {
-    return 2
+    return 1
   }
   
   func numberOfRowForSection(section: Int) -> Int {
-    switch section {
-    case 0:
-      return 1
-    default:
-      return self.model!.count
-    }
+    return self.model == nil ? 0 : self.model!.count
   }
 }
 

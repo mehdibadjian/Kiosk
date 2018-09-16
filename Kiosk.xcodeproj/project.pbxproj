@@ -194,6 +194,7 @@
 				3D1B300A214A8911002C1141 /* BookingViewController.swift */,
 				3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */,
 				3D1B3013214B50EF002C1141 /* ServicesDataModel.swift */,
+				3D2B0EED214E18D0002FC1A9 /* Table */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -245,6 +246,13 @@
 				3D1B3040214B68A0002C1141 /* Info.plist */,
 			);
 			path = KioskHistoryTests;
+			sourceTree = "<group>";
+		};
+		3D2B0EED214E18D0002FC1A9 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 		3D42C352214D3AF3006B610B /* Helper */ = {
