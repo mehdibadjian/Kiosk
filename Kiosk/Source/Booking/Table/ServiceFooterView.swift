@@ -59,8 +59,8 @@ class ServiceFooterView: UITableViewHeaderFooterView {
                                 equalTo: self.actionButton!.topAnchor,
                                 constant: -20).isActive = true
     self.headerLabel?.heightAnchor.constraint(greaterThanOrEqualToConstant: 60)
-    self.headerLabel?.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 80).isActive = true
-    self.headerLabel?.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -80).isActive = true
+    self.headerLabel?.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
+    self.headerLabel?.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
     
     self.actionButton!.translatesAutoresizingMaskIntoConstraints = false
     self.actionButton?.bottomAnchor.constraint( equalTo: self.bottomAnchor, constant: -20).isActive = true
