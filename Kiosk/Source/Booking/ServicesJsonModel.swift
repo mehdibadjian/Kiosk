@@ -21,3 +21,9 @@ extension ServicesJsonModel {
     case productPrice = "price"
   }
 }
+
+struct Services {
+  let productId : Int?
+  let productQuantity : Int?
+  let productPrice: Int?
+}

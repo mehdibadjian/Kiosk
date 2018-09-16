@@ -20,6 +20,7 @@
 		3D2B0EF3214E1C01002FC1A9 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */; };
 		3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C353214D3B09006B610B /* AlertControllerHelper.swift */; };
 		3D6C8D9E214E4F8A0049E488 /* ServiceFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */; };
+		3D6C8DA0214E580E0049E488 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */; };
 		3D93DB7F214B963C0004A317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF6214A6663002C1141 /* AppDelegate.swift */; };
 		3D93DB80214B963C0004A317 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300A214A8911002C1141 /* BookingViewController.swift */; };
 		3D93DB81214B963C0004A317 /* ServicesJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */; };
@@ -80,6 +81,7 @@
 		3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
 		3D42C353214D3B09006B610B /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
 		3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFooterView.swift; sourceTree = "<group>"; };
+		3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				3D1B300A214A8911002C1141 /* BookingViewController.swift */,
 				3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */,
 				3D1B3013214B50EF002C1141 /* ServicesDataModel.swift */,
+				3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */,
 				3D2B0EED214E18D0002FC1A9 /* Table */,
 			);
 			path = Booking;
@@ -444,6 +447,7 @@
 				3D2B0EF0214E193E002FC1A9 /* BookingStepperTableViewCell.swift in Sources */,
 				3D93DB81214B963C0004A317 /* ServicesJsonModel.swift in Sources */,
 				3D93DB82214B963C0004A317 /* ServicesDataModel.swift in Sources */,
+				3D6C8DA0214E580E0049E488 /* PriceCalculator.swift in Sources */,
 				3D93DB83214B963C0004A317 /* HistoryViewController.swift in Sources */,
 				3D93DB86214B963C0004A317 /* APIAdaptor.swift in Sources */,
 				3D2B0EF3214E1C01002FC1A9 /* CustomStepper.swift in Sources */,
