@@ -80,7 +80,7 @@
         <scene sceneID="Bfp-Ap-GpP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2dY-sm-TR2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Booking" id="cvu-FV-o4R"/>
+                    <tabBarItem key="tabBarItem" title="Booking" image="booking" selectedImage="booking" springLoaded="YES" id="cvu-FV-o4R"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0FX-GG-5CO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -99,7 +99,7 @@
         <scene sceneID="mEU-V3-sbn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fHY-Wy-T2q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="2ZL-wb-6mb"/>
+                    <tabBarItem key="tabBarItem" title="History" image="history" selectedImage="history" springLoaded="YES" id="2ZL-wb-6mb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bxH-hU-mvE">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -115,4 +115,8 @@
             <point key="canvasLocation" x="204" y="12.143928035982009"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="booking" width="30" height="30"/>
+        <image name="history" width="30" height="30"/>
+    </resources>
 </document>

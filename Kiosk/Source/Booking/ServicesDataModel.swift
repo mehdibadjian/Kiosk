@@ -29,13 +29,14 @@ class ServicesDataModel: NSObject {
       }
     }
   }
-  
   func numberOfSections() -> Int {
     return 1
   }
-  
   func numberOfRowForSection(section: Int) -> Int {
     return self.model == nil ? 0 : self.model!.count
+  }
+  func objectAtIndex(index: IndexPath) -> ServicesJsonModel {
+    return self.model![index.row]
   }
 }
 

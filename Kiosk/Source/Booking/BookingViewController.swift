@@ -29,11 +29,13 @@ class BookingViewController: UIViewController {
     }
   }
   func configureView() {
+    self.title = "Booking"
     self.tableView.delegate = self
     self.tableView.dataSource = self
-    self.tableView.separatorStyle = .none
-//    tableView.register(SubcategorySearchCollectionTableViewCell.self, forCellReuseIdentifier: SubcategorySearchCollectionTableViewCell.identifier)
-//    self.tableView.register(HeaderView.self, forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
+    self.tableView.separatorStyle = .singleLine
+    //tegister custom cell nib to tableview
+    let nib = UINib(nibName: "BookingStepperTableViewCell", bundle: nil)
+    tableView.register(nib, forCellReuseIdentifier: "BookingStepperTableViewCell")
     self.view.addSubview(self.tableView)
   }
 }
@@ -46,7 +48,11 @@ extension BookingViewController : UITableViewDataSource {
     return self.dataModel!.numberOfRowForSection(section: section)
   }
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+    let cell:BookingStepperTableViewCell? = tableView.dequeueReusableCell(withIdentifier: BookingStepperTableViewCell.identifier, for: indexPath) as? BookingStepperTableViewCell
+    let data = self.dataModel!.objectAtIndex(index: indexPath)
+    cell?.titleLabel.text = data.productName!
+    cell?.iconView.image = UIImage(named: String(data.productId!) + ".png")
+    return cell!
   }
 }
 
