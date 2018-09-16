@@ -44,17 +44,14 @@ class ServiceFooterView: UITableViewHeaderFooterView {
     self.headerLabel?.font = UIFont.boldSystemFont(ofSize: 15)
     self.headerLabel?.textColor = .black
     self.headerLabel?.textAlignment = NSTextAlignment.center
-    self.headerLabel?.text = "Total price: RM 0"
-    self.contentView.addSubview(self.headerLabel!)
-    self.headerLabel?.isHidden = false
+    self.addSubview(self.headerLabel!)
     
     self.actionButton = UIButton.init(frame: .zero)
     self.actionButton?.backgroundColor = .orange
     self.actionButton?.setTitleColor(.white, for: .normal)
     self.actionButton?.layer.cornerRadius = 10
     self.actionButton?.setTitle("Continue", for: .normal)
-    self.contentView.addSubview(self.actionButton!)
-    self.actionButton?.isHidden = false
+    self.addSubview(self.actionButton!)
     
     //setup constraints
     self.headerLabel!.translatesAutoresizingMaskIntoConstraints = false

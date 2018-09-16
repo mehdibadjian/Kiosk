@@ -8,11 +8,17 @@
 
 import UIKit
 
+
+protocol StepperDelegate {
+  func stepperUpdated(stepper: CustomStepper, value: CGFloat)
+}
+
 class CustomStepper: UIStackView {
   var stepperDecrease : UIButton?
   var valueLabel : UILabel?
   var stepperIncrease : UIButton?
-  
+  var delegate : StepperDelegate?
+
   @IBInspectable var maxValue: CGFloat = 100 {
     didSet {
       self.setState()
@@ -110,12 +116,14 @@ class CustomStepper: UIStackView {
     if value > minValue {
       value = value - 1
       valueLabel?.text = String(describing: value)
+      self.delegate?.stepperUpdated(stepper: self, value: value)
     }
   }
   @objc func increase(_ sender: UIButton) {
     if value < maxValue {
       value = value + 1
       valueLabel?.text = String(describing: value)
+      self.delegate?.stepperUpdated(stepper: self, value: value)
     }
   }
 }

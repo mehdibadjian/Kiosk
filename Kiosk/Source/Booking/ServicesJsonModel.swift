@@ -9,9 +9,10 @@
 import UIKit
 
 class ServicesJsonModel: Codable {
-  let productId : Int?
-  let productName: String?
-  let productPrice : Int?
+  var productId : Int?
+  var productName: String?
+  var productPrice : Int?
+  var productQuantity: Int?
 }
 
 extension ServicesJsonModel {
@@ -20,10 +21,4 @@ extension ServicesJsonModel {
     case productName = "product_name"
     case productPrice = "price"
   }
-}
-
-struct Services {
-  let productId : Int?
-  let productQuantity : Int?
-  let productPrice: Int?
 }

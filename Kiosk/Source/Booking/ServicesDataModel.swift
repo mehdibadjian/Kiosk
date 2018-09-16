@@ -38,5 +38,8 @@ class ServicesDataModel: NSObject {
   func objectAtIndex(index: IndexPath) -> ServicesJsonModel {
     return self.model![index.row]
   }
+  func replaceCountAtIndex(index: Int, count: Int) {
+    self.model![index].productQuantity = count
+  }
 }
 

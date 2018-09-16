@@ -9,10 +9,12 @@
 import UIKit
 
 class PriceCalculator: NSObject {
-  func CalculatePriceWithObject(objects: [Services]) -> CGFloat {
+  func CalculatePriceWithObject(objects: [ServicesJsonModel]) -> CGFloat {
     var price : CGFloat = 0.0
     for object in objects {
-      price = price + CGFloat(object.productPrice! * object.productQuantity!)
+      if let quantity = object.productQuantity {
+        price = price + CGFloat(object.productPrice! * quantity)
+      }
     }
     return price
   }
