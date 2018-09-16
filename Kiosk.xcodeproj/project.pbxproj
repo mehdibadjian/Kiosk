@@ -19,6 +19,7 @@
 		3D2B0EF1214E193E002FC1A9 /* BookingStepperTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */; };
 		3D2B0EF3214E1C01002FC1A9 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */; };
 		3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C353214D3B09006B610B /* AlertControllerHelper.swift */; };
+		3D6C8D9E214E4F8A0049E488 /* ServiceFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */; };
 		3D93DB7F214B963C0004A317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF6214A6663002C1141 /* AppDelegate.swift */; };
 		3D93DB80214B963C0004A317 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300A214A8911002C1141 /* BookingViewController.swift */; };
 		3D93DB81214B963C0004A317 /* ServicesJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */; };
@@ -78,6 +79,7 @@
 		3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingStepperTableViewCell.xib; sourceTree = "<group>"; };
 		3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
 		3D42C353214D3B09006B610B /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
+		3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 			children = (
 				3D2B0EEE214E193E002FC1A9 /* BookingStepperTableViewCell.swift */,
 				3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */,
+				3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */,
+				3D6C8D9E214E4F8A0049E488 /* ServiceFooterView.swift in Sources */,
 				3D93DB7F214B963C0004A317 /* AppDelegate.swift in Sources */,
 				3D93DB80214B963C0004A317 /* BookingViewController.swift in Sources */,
 				3D2B0EF0214E193E002FC1A9 /* BookingStepperTableViewCell.swift in Sources */,

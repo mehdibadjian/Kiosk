@@ -36,6 +36,7 @@ class BookingViewController: UIViewController {
     //tegister custom cell nib to tableview
     let nib = UINib(nibName: "BookingStepperTableViewCell", bundle: nil)
     tableView.register(nib, forCellReuseIdentifier: "BookingStepperTableViewCell")
+    self.tableView.register(ServiceFooterView.self, forHeaderFooterViewReuseIdentifier: ServiceFooterView.identifier)
     self.view.addSubview(self.tableView)
   }
 }
@@ -60,11 +61,13 @@ extension BookingViewController : UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 48
   }
-  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return 0
+  func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    return 100
   }
-  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    return UIView.init()
+  func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: ServiceFooterView.identifier) as! ServiceFooterView
+    view.configureView()
+    return view;
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
