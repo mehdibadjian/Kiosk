@@ -25,6 +25,7 @@ class BookingConfirmationViewController: UIViewController {
     let nib = UINib(nibName: BookingConfirmationTableViewCell.identifier, bundle: nil)
     tableView.register(nib, forCellReuseIdentifier: BookingConfirmationTableViewCell.identifier)
     self.tableView.register(ServiceFooterView.self, forHeaderFooterViewReuseIdentifier: ServiceFooterView.identifier)
+    self.tableView.register(BookingConfirmationDateHeaderView.self, forHeaderFooterViewReuseIdentifier: BookingConfirmationDateHeaderView.identifier)
     self.view.addSubview(self.tableView)
   }
 }
@@ -57,6 +58,17 @@ extension BookingConfirmationViewController : UITableViewDelegate {
     self.footer?.delegate = self;
     return self.footer;
   }
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    return 40
+  }
+  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: BookingConfirmationDateHeaderView.identifier) as! BookingConfirmationDateHeaderView
+    view.configureView()
+    view.headerLabel?.text = "Select prefered date"
+    view.dateLabel?.text = "Date not selected"
+    view.delegate = self
+    return view;
+  }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
   }
@@ -65,5 +77,13 @@ extension BookingConfirmationViewController : UITableViewDelegate {
 extension BookingConfirmationViewController : ServiceFooterViewDelegate {
   func btnConfirmSelected() {
     
+  }
+}
+
+extension BookingConfirmationViewController : BookingConfirmationDateHeaderViewDelegate {
+  func selectDateSelected() {
+    AlertControllerHelper().showAlertWithDatePicker(viewController: self) { (date) in
+      (self.tableView.headerView(forSection: 0) as! BookingConfirmationDateHeaderView).dateLabel?.text = DateFormatter.iso8601Custom.string(from: date!)
+    }
   }
 }

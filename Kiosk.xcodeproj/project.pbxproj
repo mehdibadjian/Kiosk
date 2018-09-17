@@ -19,8 +19,9 @@
 		3D2B0EF1214E193E002FC1A9 /* BookingStepperTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */; };
 		3D2B0EF3214E1C01002FC1A9 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */; };
 		3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C353214D3B09006B610B /* AlertControllerHelper.swift */; };
-		3D664A69214F5834006A8864 /* BookingConfirmationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A67214F5834006A8864 /* BookingConfirmationTableViewCell.swift */; };
-		3D664A6A214F5834006A8864 /* BookingConfirmationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D664A68214F5834006A8864 /* BookingConfirmationTableViewCell.xib */; };
+		3D664A6E214F6649006A8864 /* BookingConfirmationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A6C214F6649006A8864 /* BookingConfirmationTableViewCell.swift */; };
+		3D664A6F214F6649006A8864 /* BookingConfirmationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D664A6D214F6649006A8864 /* BookingConfirmationTableViewCell.xib */; };
+		3D664A71214F6661006A8864 /* BookingConfirmationDateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A70214F6661006A8864 /* BookingConfirmationDateHeaderView.swift */; };
 		3D6C8D9E214E4F8A0049E488 /* ServiceFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */; };
 		3D6C8DA0214E580E0049E488 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */; };
 		3D6C8DA2214E81ED0049E488 /* BookingConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */; };
@@ -83,8 +84,9 @@
 		3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingStepperTableViewCell.xib; sourceTree = "<group>"; };
 		3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
 		3D42C353214D3B09006B610B /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
-		3D664A67214F5834006A8864 /* BookingConfirmationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationTableViewCell.swift; sourceTree = "<group>"; };
-		3D664A68214F5834006A8864 /* BookingConfirmationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingConfirmationTableViewCell.xib; sourceTree = "<group>"; };
+		3D664A6C214F6649006A8864 /* BookingConfirmationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingConfirmationTableViewCell.swift; sourceTree = "<group>"; };
+		3D664A6D214F6649006A8864 /* BookingConfirmationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingConfirmationTableViewCell.xib; sourceTree = "<group>"; };
+		3D664A70214F6661006A8864 /* BookingConfirmationDateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationDateHeaderView.swift; sourceTree = "<group>"; };
 		3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFooterView.swift; sourceTree = "<group>"; };
 		3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 		3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationViewController.swift; sourceTree = "<group>"; };
@@ -227,8 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */,
-				3D664A67214F5834006A8864 /* BookingConfirmationTableViewCell.swift */,
-				3D664A68214F5834006A8864 /* BookingConfirmationTableViewCell.xib */,
+				3D664A6B214F6649006A8864 /* Table */,
 			);
 			path = BookingConfirmation;
 			sourceTree = "<group>";
@@ -285,6 +286,16 @@
 				3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		3D664A6B214F6649006A8864 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				3D664A6C214F6649006A8864 /* BookingConfirmationTableViewCell.swift */,
+				3D664A6D214F6649006A8864 /* BookingConfirmationTableViewCell.xib */,
+				3D664A70214F6661006A8864 /* BookingConfirmationDateHeaderView.swift */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,7 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D1B3003214A6663002C1141 /* Main.storyboard in Resources */,
-				3D664A6A214F5834006A8864 /* BookingConfirmationTableViewCell.xib in Resources */,
+				3D664A6F214F6649006A8864 /* BookingConfirmationTableViewCell.xib in Resources */,
 				3D1B3001214A6663002C1141 /* Assets.xcassets in Resources */,
 				3D1B3002214A6663002C1141 /* LaunchScreen.storyboard in Resources */,
 				3D2B0EF1214E193E002FC1A9 /* BookingStepperTableViewCell.xib in Resources */,
@@ -452,7 +463,7 @@
 			files = (
 				3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */,
 				3D6C8D9E214E4F8A0049E488 /* ServiceFooterView.swift in Sources */,
-				3D664A69214F5834006A8864 /* BookingConfirmationTableViewCell.swift in Sources */,
+				3D664A6E214F6649006A8864 /* BookingConfirmationTableViewCell.swift in Sources */,
 				3D93DB7F214B963C0004A317 /* AppDelegate.swift in Sources */,
 				3D93DB80214B963C0004A317 /* BookingViewController.swift in Sources */,
 				3D2B0EF0214E193E002FC1A9 /* BookingStepperTableViewCell.swift in Sources */,
@@ -465,6 +476,7 @@
 				3D2B0EF3214E1C01002FC1A9 /* CustomStepper.swift in Sources */,
 				3D1B304C214B9A8C002C1141 /* HistoryDataModel.swift in Sources */,
 				3D1B304A214B9A7B002C1141 /* HistoryJsonModel.swift in Sources */,
+				3D664A71214F6661006A8864 /* BookingConfirmationDateHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

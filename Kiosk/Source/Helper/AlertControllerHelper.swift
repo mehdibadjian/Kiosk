@@ -13,7 +13,7 @@ class AlertControllerHelper: NSObject {
   func showAlertWithDatePicker(viewController : UIViewController, completionHandler: @escaping (Date?) -> ()) {
     let alertController = UIAlertController(title: "Pickup date", message: "Choose your desired date", preferredStyle: .actionSheet)
     let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 40, width: viewController.view.frame.size.width-20, height: 270))
-    datePicker.datePickerMode = .dateAndTime
+    datePicker.datePickerMode = .date
     alertController.view.addSubview(datePicker)
     let action1 = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
       let currentDate = datePicker.date
