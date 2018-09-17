@@ -78,7 +78,12 @@ extension BookingConfirmationViewController : ServiceFooterViewDelegate {
   func btnConfirmSelected() {
     BookingConfirmationDataModel().storeBookingServices(model: self.dataModel!) { (error) in
       if error != nil {
-        //error handler
+        //error handle
+      }
+      else {
+        DispatchQueue.main.async {
+          self.navigationController?.popToRootViewController(animated: true)
+        }
       }
     }
   }
