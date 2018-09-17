@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol ServiceFooterViewDelegate {
+  func btnConfirmSelected()
+}
+
 class ServiceFooterView: UITableViewHeaderFooterView {
   var headerLabel : UILabel?
   var actionButton : UIButton?
-  
+  var delegate : ServiceFooterViewDelegate?
+
   override init(reuseIdentifier: String?) {
     super.init(reuseIdentifier: reuseIdentifier)
   }
@@ -40,19 +45,21 @@ class ServiceFooterView: UITableViewHeaderFooterView {
   }
   
   func configureView() {
-    self.headerLabel = UILabel()
-    self.headerLabel?.font = UIFont.boldSystemFont(ofSize: 15)
-    self.headerLabel?.textColor = .black
-    self.headerLabel?.textAlignment = NSTextAlignment.center
-    self.addSubview(self.headerLabel!)
-    
-    self.actionButton = UIButton.init(frame: .zero)
-    self.actionButton?.backgroundColor = .orange
-    self.actionButton?.setTitleColor(.white, for: .normal)
-    self.actionButton?.layer.cornerRadius = 10
-    self.actionButton?.setTitle("Continue", for: .normal)
-    self.addSubview(self.actionButton!)
-    
+    if self.headerLabel == nil {
+      self.headerLabel = UILabel()
+      self.headerLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+      self.headerLabel?.textColor = .black
+      self.headerLabel?.textAlignment = NSTextAlignment.center
+      self.addSubview(self.headerLabel!)
+      
+      self.actionButton = UIButton.init(frame: .zero)
+      self.actionButton?.backgroundColor = .orange
+      self.actionButton?.setTitleColor(.white, for: .normal)
+      self.actionButton?.layer.cornerRadius = 10
+      self.actionButton?.setTitle("Continue", for: .normal)
+      self.actionButton?.addTarget(self, action: #selector(actionBtnSelected(_:)), for: [.touchUpInside, .touchCancel])
+      self.addSubview(self.actionButton!)
+    }
     //setup constraints
     self.headerLabel!.translatesAutoresizingMaskIntoConstraints = false
     self.headerLabel?.bottomAnchor.constraint(
@@ -67,7 +74,8 @@ class ServiceFooterView: UITableViewHeaderFooterView {
     self.actionButton?.heightAnchor.constraint(greaterThanOrEqualToConstant: 60)
     self.actionButton?.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 80).isActive = true
     self.actionButton?.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -80).isActive = true
-
   }
-  
+  @objc func actionBtnSelected(_ sender: UIButton) {
+    self.delegate?.btnConfirmSelected()
+  }
 }

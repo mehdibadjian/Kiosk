@@ -58,6 +58,37 @@
             </objects>
             <point key="canvasLocation" x="1143.2" y="-652.62368815592208"/>
         </scene>
+        <!--Booking Confirmation View Controller-->
+        <scene sceneID="Tka-lU-6wR">
+            <objects>
+                <viewController storyboardIdentifier="BookingConfirmationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QcZ-Z5-ldy" customClass="BookingConfirmationViewController" customModule="Kiosk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAD-Jy-kBz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFY-t9-dhE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="627"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uFY-t9-dhE" firstAttribute="centerY" secondItem="tAD-Jy-kBz" secondAttribute="centerY" id="4h4-JX-P5Y"/>
+                            <constraint firstItem="uFY-t9-dhE" firstAttribute="centerX" secondItem="tAD-Jy-kBz" secondAttribute="centerX" id="8EO-U7-IY1"/>
+                            <constraint firstItem="uFY-t9-dhE" firstAttribute="top" secondItem="gei-Qa-EcQ" secondAttribute="top" id="HTD-B8-by5"/>
+                            <constraint firstItem="uFY-t9-dhE" firstAttribute="leading" secondItem="gei-Qa-EcQ" secondAttribute="leading" id="Stg-9b-B7j"/>
+                            <constraint firstItem="gei-Qa-EcQ" firstAttribute="trailing" secondItem="uFY-t9-dhE" secondAttribute="trailing" id="iJi-hB-KPc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gei-Qa-EcQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="uFY-t9-dhE" id="UhJ-2g-eHM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1n-QM-tSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845.5999999999999" y="-883.80809595202402"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DkG-g6-Ur8">
             <objects>
