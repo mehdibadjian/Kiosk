@@ -30,7 +30,6 @@ class HistoryDataModel: NSObject {
       }
     })
   }
-  
   func storeOrderWithObject(object : HistoryJsonModel, completionHandler: @escaping (HistoryJsonModel?, Error?) -> ()) {
     self.apiAdaptor.post(urlString: "history", object) { (response, data, error) in
       if let err = error {
@@ -50,13 +49,14 @@ class HistoryDataModel: NSObject {
       }
     }
   }
-  
   func numberOfSections() -> Int {
     return 1
   }
-  
   func numberOfRowForSection(section: Int) -> Int {
-    return self.model!.count
+    return self.model==nil ? 0 : self.model!.count
+  }
+  func objectAtIndex(index: IndexPath) -> HistoryJsonModel {
+    return self.model![index.row]
   }
 }
 

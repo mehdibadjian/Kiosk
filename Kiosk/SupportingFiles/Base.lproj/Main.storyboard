@@ -17,10 +17,26 @@
                     <view key="view" contentMode="scaleToFill" id="4qm-Dv-gw5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="obo-EV-G0i">
+                                <rect key="frame" x="0.0" y="64" width="375" height="539"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="obo-EV-G0i" firstAttribute="leading" secondItem="rkP-Oh-4Pm" secondAttribute="leading" id="VnU-VA-8kJ"/>
+                            <constraint firstItem="rkP-Oh-4Pm" firstAttribute="trailing" secondItem="obo-EV-G0i" secondAttribute="trailing" id="YN5-rd-UzY"/>
+                            <constraint firstItem="obo-EV-G0i" firstAttribute="centerX" secondItem="4qm-Dv-gw5" secondAttribute="centerX" id="gj1-5s-QPd"/>
+                            <constraint firstItem="obo-EV-G0i" firstAttribute="top" secondItem="rkP-Oh-4Pm" secondAttribute="top" id="h9R-6I-h74"/>
+                            <constraint firstItem="obo-EV-G0i" firstAttribute="centerY" secondItem="4qm-Dv-gw5" secondAttribute="centerY" id="t5w-LN-MMc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rkP-Oh-4Pm"/>
                     </view>
                     <navigationItem key="navigationItem" id="bug-Kt-Leq"/>
+                    <connections>
+                        <outlet property="tableView" destination="obo-EV-G0i" id="hz8-it-crb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWo-1e-RWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
