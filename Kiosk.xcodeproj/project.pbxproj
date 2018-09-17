@@ -34,6 +34,7 @@
 		3D93DB82214B963C0004A317 /* ServicesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3013214B50EF002C1141 /* ServicesDataModel.swift */; };
 		3D93DB83214B963C0004A317 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300C214A891E002C1141 /* HistoryViewController.swift */; };
 		3D93DB86214B963C0004A317 /* APIAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300F214AA006002C1141 /* APIAdaptor.swift */; };
+		77FCAEA5150439F5E098FAAA /* Pods_Kiosk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD83BB8816260CD74A833E45 /* Pods_Kiosk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,9 @@
 		3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFooterView.swift; sourceTree = "<group>"; };
 		3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 		3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationViewController.swift; sourceTree = "<group>"; };
+		BFFF0DA76D579CB97FE92A8F /* Pods-Kiosk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk.release.xcconfig"; sourceTree = "<group>"; };
+		DA1988933F1190CE9C6E3BCA /* Pods-Kiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk.debug.xcconfig"; sourceTree = "<group>"; };
+		DD83BB8816260CD74A833E45 /* Pods_Kiosk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kiosk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FCAEA5150439F5E098FAAA /* Pods_Kiosk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21CDA0365E8C92095E2A6A65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA1988933F1190CE9C6E3BCA /* Pods-Kiosk.debug.xcconfig */,
+				BFFF0DA76D579CB97FE92A8F /* Pods-Kiosk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3D1B2FD0214A6517002C1141 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +152,8 @@
 				3D1B302B214B63CC002C1141 /* KioskNetworkTests */,
 				3D1B303D214B68A0002C1141 /* KioskHistoryTests */,
 				3D1B2FDA214A6517002C1141 /* Products */,
+				21CDA0365E8C92095E2A6A65 /* Pods */,
+				83B021CB2B1C3126A6504035 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,6 +331,14 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		83B021CB2B1C3126A6504035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD83BB8816260CD74A833E45 /* Pods_Kiosk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,9 +346,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D1B2FEB214A651A002C1141 /* Build configuration list for PBXNativeTarget "Kiosk" */;
 			buildPhases = (
+				D2664A5E9F02B59980A02AE0 /* [CP] Check Pods Manifest.lock */,
 				3D1B2FD5214A6517002C1141 /* Sources */,
 				3D1B2FD6214A6517002C1141 /* Frameworks */,
 				3D1B2FD7214A6517002C1141 /* Resources */,
+				8C0DD9B93EB02EA8F62FC7F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -473,6 +499,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C0DD9B93EB02EA8F62FC7F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2664A5E9F02B59980A02AE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kiosk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D1B2FD5214A6517002C1141 /* Sources */ = {
@@ -681,6 +748,7 @@
 		};
 		3D1B2FEC214A651A002C1141 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1988933F1190CE9C6E3BCA /* Pods-Kiosk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -699,6 +767,7 @@
 		};
 		3D1B2FED214A651A002C1141 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFF0DA76D579CB97FE92A8F /* Pods-Kiosk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
