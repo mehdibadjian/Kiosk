@@ -82,7 +82,7 @@ extension BookingConfirmationViewController : ServiceFooterViewDelegate {
       }
       else {
         DispatchQueue.main.async {
-          self.navigationController?.popToRootViewController(animated: true)
+          self.navigationController?.popViewController(animated: true)
         }
       }
     }
