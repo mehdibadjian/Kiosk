@@ -45,7 +45,7 @@ class KioskHistoryTests: XCTestCase {
     var urlError : Error?
     var response : HistoryJsonModel?
     let request = HistoryJsonModel()
-    request.creationDate = Date.init(timeIntervalSinceNow: 0)
+    request.creationDate = DateFormatter.iso8601Custom.string(from: Date.init(timeIntervalSinceNow: 0))
     request.bookingType = "express"
     request.totalPrice = "100"
     var service = ExtraService()

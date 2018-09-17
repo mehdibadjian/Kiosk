@@ -62,7 +62,7 @@ extension BookingViewController : UITableViewDataSource {
     cell?.stepperView.delegate = self;
     let data = self.dataModel!.objectAtIndex(index: indexPath)
     cell?.titleLabel.text = data.productName!
-    cell?.iconView.image = UIImage(named: String(data.productId!) + ".png")
+    cell?.iconView.image = UIImage(named: String(Int(data.productId!)) + ".png")
     cell?.stepperView.tag = indexPath.row
     cell?.stepperView.value = CGFloat(data.productQuantity == nil ? 0 : data.productQuantity!)
     cell?.stepperView.valueLabel?.text = String(data.productQuantity == nil ? 0 : data.productQuantity!)

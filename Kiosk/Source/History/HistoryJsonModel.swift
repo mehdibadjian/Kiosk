@@ -23,7 +23,7 @@ struct ExtraService : Codable {
 }
 
 class HistoryJsonModel: Codable {
-  var creationDate : Date?
+  var creationDate : String?
   var totalPrice: String?
   var bookingType : String?
   var bookingId : Float?

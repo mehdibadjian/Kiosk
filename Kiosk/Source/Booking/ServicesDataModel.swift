@@ -39,7 +39,7 @@ class ServicesDataModel: NSObject {
     return self.model![index.row]
   }
   func replaceCountAtIndex(index: Int, count: Int) {
-    self.model![index].productQuantity = count
+    self.model![index].productQuantity = Float(count)
   }
 }
 
