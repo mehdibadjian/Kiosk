@@ -94,7 +94,6 @@ extension BookingConfirmationViewController : UITableViewDelegate {
 
 extension BookingConfirmationViewController : ServiceFooterViewDelegate {
   func btnConfirmSelected() {
-    
     dataModel?.postConfirmation(model: (dataModel?.confirmationModel)!, completion: { (error) in
       if error != nil {
         //error handle

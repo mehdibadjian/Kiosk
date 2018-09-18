@@ -9,9 +9,7 @@
 class ConfirmationRepository : ConfirmationRepositoryProtocol {
   func postBookingConfirmation(model: ConfirmationModel, completion: @escaping (Error?) -> ()) {
     APIAdaptor().post(urlString: "history", model) { (response, data, error) in
-      if let err = error {
-        completion(err)
-      }
+      completion(error)
     }
   }
 }
