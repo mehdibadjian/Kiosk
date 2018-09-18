@@ -10,9 +10,6 @@
 		3D1B3001214A6663002C1141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF8214A6663002C1141 /* Assets.xcassets */; };
 		3D1B3002214A6663002C1141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF9214A6663002C1141 /* LaunchScreen.storyboard */; };
 		3D1B3003214A6663002C1141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B2FFB214A6663002C1141 /* Main.storyboard */; };
-		3D1B301C214B51DD002C1141 /* KioskBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B301B214B51DD002C1141 /* KioskBookingTests.swift */; };
-		3D1B302D214B63CC002C1141 /* KioskNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B302C214B63CC002C1141 /* KioskNetworkTests.swift */; };
-		3D1B303F214B68A0002C1141 /* KioskHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B303E214B68A0002C1141 /* KioskHistoryTests.swift */; };
 		3D1B304A214B9A7B002C1141 /* HistoryJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B3049214B9A7B002C1141 /* HistoryJsonModel.swift */; };
 		3D1B304C214B9A8C002C1141 /* HistoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B304B214B9A8C002C1141 /* HistoryDataModel.swift */; };
 		3D2B0EF0214E193E002FC1A9 /* BookingStepperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B0EEE214E193E002FC1A9 /* BookingStepperTableViewCell.swift */; };
@@ -21,6 +18,7 @@
 		3D3F2F8C21509AA20047398A /* ServicesUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F2F8B21509AA20047398A /* ServicesUseCaseSpec.swift */; };
 		3D3F2F8E21509AC00047398A /* ServicesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F2F8D21509AC00047398A /* ServicesViewModelSpec.swift */; };
 		3D3F2F912150A7470047398A /* BookingConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F2F902150A7470047398A /* BookingConvertor.swift */; };
+		3D3F2F942150D7350047398A /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F2F932150D7350047398A /* PriceCalculator.swift */; };
 		3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C353214D3B09006B610B /* AlertControllerHelper.swift */; };
 		3D664A6E214F6649006A8864 /* BookingConfirmationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A6C214F6649006A8864 /* BookingConfirmationTableViewCell.swift */; };
 		3D664A6F214F6649006A8864 /* BookingConfirmationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D664A6D214F6649006A8864 /* BookingConfirmationTableViewCell.xib */; };
@@ -37,7 +35,6 @@
 		3D664AA1214FFD22006A8864 /* ServicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664AA0214FFD22006A8864 /* ServicesUseCase.swift */; };
 		3D67C2D8215099170030925D /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67C2D7215099170030925D /* ServicesViewModel.swift */; };
 		3D6C8D9E214E4F8A0049E488 /* ServiceFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */; };
-		3D6C8DA0214E580E0049E488 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */; };
 		3D6C8DA2214E81ED0049E488 /* BookingConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */; };
 		3D93DB7F214B963C0004A317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B2FF6214A6663002C1141 /* AppDelegate.swift */; };
 		3D93DB80214B963C0004A317 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300A214A8911002C1141 /* BookingViewController.swift */; };
@@ -93,14 +90,8 @@
 		3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesJsonModel.swift; sourceTree = "<group>"; };
 		3D1B3013214B50EF002C1141 /* ServicesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesDataModel.swift; sourceTree = "<group>"; };
 		3D1B3019214B51DD002C1141 /* KioskBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1B301B214B51DD002C1141 /* KioskBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskBookingTests.swift; sourceTree = "<group>"; };
-		3D1B301D214B51DD002C1141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1B302A214B63CC002C1141 /* KioskNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1B302C214B63CC002C1141 /* KioskNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskNetworkTests.swift; sourceTree = "<group>"; };
-		3D1B302E214B63CC002C1141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1B303C214B68A0002C1141 /* KioskHistoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskHistoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D1B303E214B68A0002C1141 /* KioskHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskHistoryTests.swift; sourceTree = "<group>"; };
-		3D1B3040214B68A0002C1141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1B3049214B9A7B002C1141 /* HistoryJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryJsonModel.swift; sourceTree = "<group>"; };
 		3D1B304B214B9A8C002C1141 /* HistoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataModel.swift; sourceTree = "<group>"; };
 		3D2B0EEE214E193E002FC1A9 /* BookingStepperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStepperTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +100,7 @@
 		3D3F2F8B21509AA20047398A /* ServicesUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesUseCaseSpec.swift; sourceTree = "<group>"; };
 		3D3F2F8D21509AC00047398A /* ServicesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModelSpec.swift; sourceTree = "<group>"; };
 		3D3F2F902150A7470047398A /* BookingConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConvertor.swift; sourceTree = "<group>"; };
+		3D3F2F932150D7350047398A /* PriceCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 		3D42C353214D3B09006B610B /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
 		3D664A6C214F6649006A8864 /* BookingConfirmationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingConfirmationTableViewCell.swift; sourceTree = "<group>"; };
 		3D664A6D214F6649006A8864 /* BookingConfirmationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingConfirmationTableViewCell.xib; sourceTree = "<group>"; };
@@ -128,7 +120,6 @@
 		3D664AA0214FFD22006A8864 /* ServicesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesUseCase.swift; sourceTree = "<group>"; };
 		3D67C2D7215099170030925D /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
 		3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFooterView.swift; sourceTree = "<group>"; };
-		3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 		3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationViewController.swift; sourceTree = "<group>"; };
 		6677ED6FC135E27ACAF74B39 /* Pods-KioskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KioskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KioskTests/Pods-KioskTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D913C10FDE4B6FD6A06CA9C /* Pods-KioskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KioskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KioskTests/Pods-KioskTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,9 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				3D1B2FDB214A6517002C1141 /* Kiosk */,
-				3D1B301A214B51DD002C1141 /* KioskBookingTests */,
-				3D1B302B214B63CC002C1141 /* KioskNetworkTests */,
-				3D1B303D214B68A0002C1141 /* KioskHistoryTests */,
 				3D664A7E214FD5BD006A8864 /* KioskTests */,
 				3D1B2FDA214A6517002C1141 /* Products */,
 				21CDA0365E8C92095E2A6A65 /* Pods */,
@@ -272,6 +260,8 @@
 		3D1B3007214A8736002C1141 /* Booking */ = {
 			isa = PBXGroup;
 			children = (
+				3D3F2F922150D7090047398A /* Helpers */,
+				3D2B0EED214E18D0002FC1A9 /* Views */,
 				3D3F2F8F2150A7360047398A /* Adaptors */,
 				3D664A9F214FFCF6006A8864 /* UseCases */,
 				3D664A8C214FD886006A8864 /* Models */,
@@ -279,8 +269,6 @@
 				3D1B300A214A8911002C1141 /* BookingViewController.swift */,
 				3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */,
 				3D1B3013214B50EF002C1141 /* ServicesDataModel.swift */,
-				3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */,
-				3D2B0EED214E18D0002FC1A9 /* Table */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -310,41 +298,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		3D1B301A214B51DD002C1141 /* KioskBookingTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D1B301B214B51DD002C1141 /* KioskBookingTests.swift */,
-				3D1B301D214B51DD002C1141 /* Info.plist */,
-			);
-			path = KioskBookingTests;
-			sourceTree = "<group>";
-		};
-		3D1B302B214B63CC002C1141 /* KioskNetworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D1B302C214B63CC002C1141 /* KioskNetworkTests.swift */,
-				3D1B302E214B63CC002C1141 /* Info.plist */,
-			);
-			path = KioskNetworkTests;
-			sourceTree = "<group>";
-		};
-		3D1B303D214B68A0002C1141 /* KioskHistoryTests */ = {
-			isa = PBXGroup;
-			children = (
-				3D1B303E214B68A0002C1141 /* KioskHistoryTests.swift */,
-				3D1B3040214B68A0002C1141 /* Info.plist */,
-			);
-			path = KioskHistoryTests;
-			sourceTree = "<group>";
-		};
-		3D2B0EED214E18D0002FC1A9 /* Table */ = {
+		3D2B0EED214E18D0002FC1A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3D2B0EEE214E193E002FC1A9 /* BookingStepperTableViewCell.swift */,
 				3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */,
 				3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */,
 			);
-			path = Table;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3D3F2F8A21509AA20047398A /* UseCase */ = {
@@ -361,6 +322,14 @@
 				3D3F2F902150A7470047398A /* BookingConvertor.swift */,
 			);
 			path = Adaptors;
+			sourceTree = "<group>";
+		};
+		3D3F2F922150D7090047398A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F2F932150D7350047398A /* PriceCalculator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3D42C352214D3AF3006B610B /* Helper */ = {
@@ -735,7 +704,6 @@
 				3D6C8DA2214E81ED0049E488 /* BookingConfirmationViewController.swift in Sources */,
 				3D93DB81214B963C0004A317 /* ServicesJsonModel.swift in Sources */,
 				3D93DB82214B963C0004A317 /* ServicesDataModel.swift in Sources */,
-				3D6C8DA0214E580E0049E488 /* PriceCalculator.swift in Sources */,
 				3D664A8E214FD89B006A8864 /* BookingModel.swift in Sources */,
 				3D3F2F912150A7470047398A /* BookingConvertor.swift in Sources */,
 				3D93DB83214B963C0004A317 /* HistoryViewController.swift in Sources */,
@@ -747,6 +715,7 @@
 				3D1B304A214B9A7B002C1141 /* HistoryJsonModel.swift in Sources */,
 				3D664A9E214FED1A006A8864 /* ServicesRepository.swift in Sources */,
 				3D67C2D8215099170030925D /* ServicesViewModel.swift in Sources */,
+				3D3F2F942150D7350047398A /* PriceCalculator.swift in Sources */,
 				3D664A73214FA377006A8864 /* BookingConfirmationDataModel.swift in Sources */,
 				3D664A71214F6661006A8864 /* BookingConfirmationDateHeaderView.swift in Sources */,
 			);
@@ -756,7 +725,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1B301C214B51DD002C1141 /* KioskBookingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,7 +732,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1B302D214B63CC002C1141 /* KioskNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,7 +739,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D1B303F214B68A0002C1141 /* KioskHistoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

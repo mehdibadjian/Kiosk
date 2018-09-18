@@ -26,19 +26,19 @@ class ServicesViewModelSpec: QuickSpec {
       }
 
       it("has a booking model that has a product id") {
-        expect(model.bookingModel.first?.productId).to(equal(0))
+        expect(model.bookingModel?.first?.productId).to(equal(0))
       }
 
       it("has a booking model that has a product name") {
-        expect(model.bookingModel.first?.name).to(equal("name"))
+        expect(model.bookingModel?.first?.name).to(equal("name"))
       }
 
       it("has a booking model that has a product cost") {
-        expect(model.bookingModel.first?.cost).to(equal(10.0))
+        expect(model.bookingModel?.first?.cost).to(equal(10.0))
       }
 
       it("has a booking model that has a product quantity") {
-        expect(model.bookingModel.first?.quantity).to(equal(0))
+        expect(model.bookingModel?.first?.quantity).to(equal(0))
       }
 
       it("returns number of rows") {
@@ -50,7 +50,8 @@ class ServicesViewModelSpec: QuickSpec {
       }
 
       it("returns replace quantity at index") {
-        expect(model.replaceCountAtIndex(index: 0, count: 1).quantity).to(equal(1))
+        model.replaceCountAtIndex(index: 0, count: 1)
+        expect(model.bookingModel?.first?.quantity).to(equal(1))
       }
     }
   }

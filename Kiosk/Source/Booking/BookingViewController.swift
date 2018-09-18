@@ -35,15 +35,15 @@ class BookingViewController: UIViewController {
   }
   
   func configureView() {
-    self.title = "Booking"
-    self.tableView.delegate = self
-    self.tableView.dataSource = self
-    self.tableView.separatorStyle = .singleLine
+    title = "Booking"
+    tableView.delegate = self
+    tableView.dataSource = self
+    tableView.separatorStyle = .singleLine
     //tegister custom cell nib to tableview
     let nib = UINib(nibName: BookingStepperTableViewCell.identifier, bundle: nil)
     tableView.register(nib, forCellReuseIdentifier: BookingStepperTableViewCell.identifier)
-    self.tableView.register(ServiceFooterView.self, forHeaderFooterViewReuseIdentifier: ServiceFooterView.identifier)
-    self.view.addSubview(self.tableView)
+    tableView.register(ServiceFooterView.self, forHeaderFooterViewReuseIdentifier: ServiceFooterView.identifier)
+    view.addSubview(self.tableView)
   }
 }
 
@@ -96,17 +96,16 @@ extension BookingViewController : UITableViewDelegate {
 
 extension BookingViewController : StepperDelegate {
   func stepperUpdated(stepper: CustomStepper, value: CGFloat) {
-//    self.dataModel!.replaceCountAtIndex(index: stepper.tag, count: Int(stepper.value))
-    self.priceUpdate()
+    services?.replaceCountAtIndex(index: stepper.tag, count: Int(stepper.value))
+    priceUpdate()
   }
   
   func priceUpdate() {
-//    let price = PriceCalculator().CalculatePriceWithObject(objects: (self.dataModel?.model)!)
+    let price = PriceCalculator().CalculatePriceWithObject(objects: (services?.bookingModel)!)
     let footer = self.tableView.footerView(forSection: 0) as! ServiceFooterView
-//    self.tableView.beginUpdates()
-    let price = 0
+    tableView.beginUpdates()
     footer.headerLabel?.text = "Total price: RM \(price)"
-    self.tableView.endUpdates()
+    tableView.endUpdates()
   }
 }
 
@@ -116,7 +115,7 @@ extension BookingViewController : ServiceFooterViewDelegate {
     let confirmationVC = storyBoard.instantiateViewController(withIdentifier: "BookingConfirmationViewController") as! BookingConfirmationViewController
 //    confirmationVC.dataModel = self.dataModel!
     confirmationVC.footer = self.tableView.footerView(forSection: 0) as? ServiceFooterView
-    self.navigationController?.pushViewController(confirmationVC, animated: true)
+    navigationController?.pushViewController(confirmationVC, animated: true)
   }
 }
 

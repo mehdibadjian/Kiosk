@@ -23,7 +23,7 @@ class ServicesViewModel {
   
   init(protocolConversion: BookingConversionProtocol){
     self.protocolConversion = protocolConversion
-    updateMode { (error) in
+    updateModel { (error) in
       if error == nil {
         self.delegate?.modelUpdated()
       }
@@ -38,16 +38,15 @@ class ServicesViewModel {
     return bookingModel![index]
   }
   
-  func replaceCountAtIndex(index: Int, count: Int) -> BookingModel {
+  func replaceCountAtIndex(index: Int, count: Int) {
     bookingModel![index].quantity = count
-    return bookingModel![index]
   }
   
   func convertProtocol(models: [ServiceModel]) {
     bookingModel = self.protocolConversion.convertServicesModelToBookingModel(models: models)
   }
   
-  func updateMode(completion: @escaping (Error?)->()) {
+  func updateModel(completion: @escaping (Error?)->()) {
     let servicesRespository = ServicesRepository()
     let servicesModel = ServicesUseCase(apiService: servicesRespository)
     servicesModel.services(completion: { [weak self] services in
