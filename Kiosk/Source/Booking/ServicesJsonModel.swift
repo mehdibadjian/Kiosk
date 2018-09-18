@@ -9,10 +9,10 @@
 import UIKit
 
 class ServicesJsonModel: Codable {
-  var productId : Float?
+  var productId : Int?
   var productName: String?
   var productPrice : Float?
-  var productQuantity: Float?
+  var productQuantity: Int?
 }
 
 extension ServicesJsonModel {

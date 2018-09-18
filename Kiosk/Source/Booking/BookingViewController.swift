@@ -113,7 +113,7 @@ extension BookingViewController : ServiceFooterViewDelegate {
   func btnConfirmSelected() {
     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let confirmationVC = storyBoard.instantiateViewController(withIdentifier: "BookingConfirmationViewController") as! BookingConfirmationViewController
-//    confirmationVC.dataModel = self.dataModel!
+    confirmationVC.services = self.services?.bookingModel!
     confirmationVC.footer = self.tableView.footerView(forSection: 0) as? ServiceFooterView
     navigationController?.pushViewController(confirmationVC, animated: true)
   }

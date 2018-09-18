@@ -10,38 +10,52 @@ import UIKit
 
 class BookingConfirmationViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
-  var dataModel : ServicesDataModel?
-  var footer : ServiceFooterView?
+  var services: [BookingModel]?
+  var dataModel: ConfirmationViewModel?
+  var footer: ServiceFooterView?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.configureView()
+    
+    let bookingConversion = ConfirmationAdaptor()
+    dataModel = ConfirmationViewModel(protocolConversion: bookingConversion, bookingModel: services!)
   }
+  
   func configureView() {
     self.title = "Booking Confirmation"
-    self.tableView.delegate = self
-    self.tableView.dataSource = self
-    self.tableView.separatorStyle = .singleLine
+    tableView.delegate = self
+    tableView.dataSource = self
+    tableView.separatorStyle = .singleLine
     //tegister custom cell nib to tableview
     let nib = UINib(nibName: BookingConfirmationTableViewCell.identifier, bundle: nil)
     tableView.register(nib, forCellReuseIdentifier: BookingConfirmationTableViewCell.identifier)
-    self.tableView.register(ServiceFooterView.self, forHeaderFooterViewReuseIdentifier: ServiceFooterView.identifier)
-    self.tableView.register(BookingConfirmationDateHeaderView.self, forHeaderFooterViewReuseIdentifier: BookingConfirmationDateHeaderView.identifier)
-    self.view.addSubview(self.tableView)
+    tableView.register(ServiceFooterView.self, forHeaderFooterViewReuseIdentifier: ServiceFooterView.identifier)
+    self.view.addSubview(tableView)
   }
 }
 
 extension BookingConfirmationViewController : UITableViewDataSource {
   func numberOfSections(in tableView: UITableView) -> Int {
-    return self.dataModel!.numberOfSections()
+    return 2
   }
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.dataModel!.numberOfRowForSection(section: section)
+    return dataModel!.numberOfRows(index: section)
   }
+  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell:BookingConfirmationTableViewCell? = tableView.dequeueReusableCell(withIdentifier: BookingConfirmationTableViewCell.identifier, for: indexPath) as? BookingConfirmationTableViewCell
-    let data = self.dataModel!.objectAtIndex(index: indexPath)
-    cell?.titleLabel?.text = "\(data.productName!) x \(data.productQuantity == nil ? 0 : data.productQuantity!)"
-    cell?.descLabel?.text = "RM \(data.productQuantity == nil ? 0 : data.productQuantity! * data.productPrice!)"
+    
+    if let data = dataModel!.objectAtIndex(index: indexPath) as? ExtraService  {
+      cell?.titleLabel?.text = "\(data.name!) x \(data.quantity == nil ? 0 : data.quantity!)"
+      cell?.descLabel?.text = "RM \(data.quantity == nil ? 0 : Float(data.quantity!) * data.price!)"
+    }
+    else if let data = dataModel!.objectAtIndex(index: indexPath) as? String {
+      cell?.titleLabel.text = "Selected Date"
+      cell?.descLabel?.text = data
+    }
+
     return cell!
   }
 }
@@ -50,33 +64,38 @@ extension BookingConfirmationViewController : UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 48
   }
+  
   func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-    return 100
+    if section == 1 {
+      return 100
+    } else {
+      return 0
+    }
   }
+  
   func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-    self.footer?.actionButton?.setTitle("Book", for: .normal)
-    self.footer?.delegate = self;
-    return self.footer;
+    footer?.actionButton?.setTitle("Book", for: .normal)
+    footer?.delegate = self;
+    return footer;
   }
-  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return 40
-  }
-  func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: BookingConfirmationDateHeaderView.identifier) as! BookingConfirmationDateHeaderView
-    view.configureView()
-    view.headerLabel?.text = "Select prefered date"
-    view.dateLabel?.text = "Date not selected"
-    view.delegate = self
-    return view;
-  }
+  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+    if indexPath.section == 0 {
+      AlertControllerHelper().showAlertWithDatePicker(viewController: self) { (date) in
+        self.dataModel?.updateDate(date: date!)
+        DispatchQueue.main.async {
+          tableView.reloadData()
+        }
+      }
+    }
   }
 }
 
 extension BookingConfirmationViewController : ServiceFooterViewDelegate {
   func btnConfirmSelected() {
-    BookingConfirmationDataModel().storeBookingServices(model: self.dataModel!) { (error) in
+    
+    dataModel?.postConfirmation(model: (dataModel?.confirmationModel)!, completion: { (error) in
       if error != nil {
         //error handle
       }
@@ -85,14 +104,6 @@ extension BookingConfirmationViewController : ServiceFooterViewDelegate {
           self.navigationController?.popViewController(animated: true)
         }
       }
-    }
-  }
-}
-
-extension BookingConfirmationViewController : BookingConfirmationDateHeaderViewDelegate {
-  func selectDateSelected() {
-    AlertControllerHelper().showAlertWithDatePicker(viewController: self) { (date) in
-      (self.tableView.headerView(forSection: 0) as! BookingConfirmationDateHeaderView).dateLabel?.text = DateFormatter.iso8601Custom.string(from: date!)
-    }
+    })
   }
 }
