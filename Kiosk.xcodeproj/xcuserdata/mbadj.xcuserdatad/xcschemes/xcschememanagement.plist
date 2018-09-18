@@ -7,7 +7,40 @@
 		<key>Kiosk.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+		<key>KioskTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3D1B2FD8214A6517002C1141</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D1B3018214B51DD002C1141</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D1B3029214B63CC002C1141</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D1B303B214B68A0002C1141</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D664A7C214FD5BD006A8864</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

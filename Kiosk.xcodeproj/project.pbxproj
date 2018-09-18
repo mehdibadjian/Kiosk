@@ -18,6 +18,9 @@
 		3D2B0EF0214E193E002FC1A9 /* BookingStepperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B0EEE214E193E002FC1A9 /* BookingStepperTableViewCell.swift */; };
 		3D2B0EF1214E193E002FC1A9 /* BookingStepperTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */; };
 		3D2B0EF3214E1C01002FC1A9 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */; };
+		3D3F2F8C21509AA20047398A /* ServicesUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F2F8B21509AA20047398A /* ServicesUseCaseSpec.swift */; };
+		3D3F2F8E21509AC00047398A /* ServicesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F2F8D21509AC00047398A /* ServicesViewModelSpec.swift */; };
+		3D3F2F912150A7470047398A /* BookingConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3F2F902150A7470047398A /* BookingConvertor.swift */; };
 		3D42C354214D3B09006B610B /* AlertControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42C353214D3B09006B610B /* AlertControllerHelper.swift */; };
 		3D664A6E214F6649006A8864 /* BookingConfirmationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A6C214F6649006A8864 /* BookingConfirmationTableViewCell.swift */; };
 		3D664A6F214F6649006A8864 /* BookingConfirmationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D664A6D214F6649006A8864 /* BookingConfirmationTableViewCell.xib */; };
@@ -25,6 +28,14 @@
 		3D664A73214FA377006A8864 /* BookingConfirmationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A72214FA377006A8864 /* BookingConfirmationDataModel.swift */; };
 		3D664A77214FABFA006A8864 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A75214FABFA006A8864 /* HistoryTableViewCell.swift */; };
 		3D664A78214FABFA006A8864 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D664A76214FABFA006A8864 /* HistoryTableViewCell.xib */; };
+		3D664A8B214FD66B006A8864 /* BookingModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A8A214FD66B006A8864 /* BookingModelSpec.swift */; };
+		3D664A8E214FD89B006A8864 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A8D214FD89B006A8864 /* BookingModel.swift */; };
+		3D664A90214FDC4C006A8864 /* ServiceModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A8F214FDC4C006A8864 /* ServiceModelSpec.swift */; };
+		3D664A92214FDD36006A8864 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A91214FDD36006A8864 /* ServiceModel.swift */; };
+		3D664A9C214FEBE9006A8864 /* ServicesRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A9B214FEBE9006A8864 /* ServicesRepositorySpec.swift */; };
+		3D664A9E214FED1A006A8864 /* ServicesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664A9D214FED1A006A8864 /* ServicesRepository.swift */; };
+		3D664AA1214FFD22006A8864 /* ServicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D664AA0214FFD22006A8864 /* ServicesUseCase.swift */; };
+		3D67C2D8215099170030925D /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67C2D7215099170030925D /* ServicesViewModel.swift */; };
 		3D6C8D9E214E4F8A0049E488 /* ServiceFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */; };
 		3D6C8DA0214E580E0049E488 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */; };
 		3D6C8DA2214E81ED0049E488 /* BookingConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */; };
@@ -35,6 +46,7 @@
 		3D93DB83214B963C0004A317 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300C214A891E002C1141 /* HistoryViewController.swift */; };
 		3D93DB86214B963C0004A317 /* APIAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B300F214AA006002C1141 /* APIAdaptor.swift */; };
 		77FCAEA5150439F5E098FAAA /* Pods_Kiosk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD83BB8816260CD74A833E45 /* Pods_Kiosk.framework */; };
+		D68D85D5767753AE0114C326 /* Pods_KioskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8BB32DC9A66475E2915828 /* Pods_KioskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +65,13 @@
 			remoteInfo = Kiosk;
 		};
 		3D1B3041214B68A0002C1141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D1B2FD1214A6517002C1141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1B2FD8214A6517002C1141;
+			remoteInfo = Kiosk;
+		};
+		3D664A82214FD5BD006A8864 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D1B2FD1214A6517002C1141 /* Project object */;
 			proxyType = 1;
@@ -87,6 +106,9 @@
 		3D2B0EEE214E193E002FC1A9 /* BookingStepperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStepperTableViewCell.swift; sourceTree = "<group>"; };
 		3D2B0EEF214E193E002FC1A9 /* BookingStepperTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingStepperTableViewCell.xib; sourceTree = "<group>"; };
 		3D2B0EF2214E1C01002FC1A9 /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		3D3F2F8B21509AA20047398A /* ServicesUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesUseCaseSpec.swift; sourceTree = "<group>"; };
+		3D3F2F8D21509AC00047398A /* ServicesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModelSpec.swift; sourceTree = "<group>"; };
+		3D3F2F902150A7470047398A /* BookingConvertor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConvertor.swift; sourceTree = "<group>"; };
 		3D42C353214D3B09006B610B /* AlertControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerHelper.swift; sourceTree = "<group>"; };
 		3D664A6C214F6649006A8864 /* BookingConfirmationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingConfirmationTableViewCell.swift; sourceTree = "<group>"; };
 		3D664A6D214F6649006A8864 /* BookingConfirmationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingConfirmationTableViewCell.xib; sourceTree = "<group>"; };
@@ -94,9 +116,23 @@
 		3D664A72214FA377006A8864 /* BookingConfirmationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationDataModel.swift; sourceTree = "<group>"; };
 		3D664A75214FABFA006A8864 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		3D664A76214FABFA006A8864 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		3D664A7D214FD5BD006A8864 /* KioskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KioskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D664A81214FD5BD006A8864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D664A89214FD66B006A8864 /* KioskTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KioskTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D664A8A214FD66B006A8864 /* BookingModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModelSpec.swift; sourceTree = "<group>"; };
+		3D664A8D214FD89B006A8864 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
+		3D664A8F214FDC4C006A8864 /* ServiceModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModelSpec.swift; sourceTree = "<group>"; };
+		3D664A91214FDD36006A8864 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		3D664A9B214FEBE9006A8864 /* ServicesRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesRepositorySpec.swift; sourceTree = "<group>"; };
+		3D664A9D214FED1A006A8864 /* ServicesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesRepository.swift; sourceTree = "<group>"; };
+		3D664AA0214FFD22006A8864 /* ServicesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesUseCase.swift; sourceTree = "<group>"; };
+		3D67C2D7215099170030925D /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
 		3D6C8D9D214E4F8A0049E488 /* ServiceFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFooterView.swift; sourceTree = "<group>"; };
 		3D6C8D9F214E580E0049E488 /* PriceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 		3D6C8DA1214E81ED0049E488 /* BookingConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationViewController.swift; sourceTree = "<group>"; };
+		6677ED6FC135E27ACAF74B39 /* Pods-KioskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KioskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KioskTests/Pods-KioskTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D913C10FDE4B6FD6A06CA9C /* Pods-KioskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KioskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KioskTests/Pods-KioskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE8BB32DC9A66475E2915828 /* Pods_KioskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KioskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFF0DA76D579CB97FE92A8F /* Pods-Kiosk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk.release.xcconfig"; sourceTree = "<group>"; };
 		DA1988933F1190CE9C6E3BCA /* Pods-Kiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kiosk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk.debug.xcconfig"; sourceTree = "<group>"; };
 		DD83BB8816260CD74A833E45 /* Pods_Kiosk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kiosk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +168,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D664A7A214FD5BD006A8864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68D85D5767753AE0114C326 /* Pods_KioskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -140,6 +184,8 @@
 			children = (
 				DA1988933F1190CE9C6E3BCA /* Pods-Kiosk.debug.xcconfig */,
 				BFFF0DA76D579CB97FE92A8F /* Pods-Kiosk.release.xcconfig */,
+				7D913C10FDE4B6FD6A06CA9C /* Pods-KioskTests.debug.xcconfig */,
+				6677ED6FC135E27ACAF74B39 /* Pods-KioskTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -151,6 +197,7 @@
 				3D1B301A214B51DD002C1141 /* KioskBookingTests */,
 				3D1B302B214B63CC002C1141 /* KioskNetworkTests */,
 				3D1B303D214B68A0002C1141 /* KioskHistoryTests */,
+				3D664A7E214FD5BD006A8864 /* KioskTests */,
 				3D1B2FDA214A6517002C1141 /* Products */,
 				21CDA0365E8C92095E2A6A65 /* Pods */,
 				83B021CB2B1C3126A6504035 /* Frameworks */,
@@ -164,6 +211,7 @@
 				3D1B3019214B51DD002C1141 /* KioskBookingTests.xctest */,
 				3D1B302A214B63CC002C1141 /* KioskNetworkTests.xctest */,
 				3D1B303C214B68A0002C1141 /* KioskHistoryTests.xctest */,
+				3D664A7D214FD5BD006A8864 /* KioskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				3D1B2FF4214A6663002C1141 /* Source */,
-				3D1B2FFE214A6663002C1141 /* Spec */,
 				3D1B2FF7214A6663002C1141 /* SupportingFiles */,
 			);
 			path = Kiosk;
@@ -204,13 +251,6 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		3D1B2FFE214A6663002C1141 /* Spec */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Spec;
-			sourceTree = "<group>";
-		};
 		3D1B3005214A8736002C1141 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +272,10 @@
 		3D1B3007214A8736002C1141 /* Booking */ = {
 			isa = PBXGroup;
 			children = (
+				3D3F2F8F2150A7360047398A /* Adaptors */,
+				3D664A9F214FFCF6006A8864 /* UseCases */,
+				3D664A8C214FD886006A8864 /* Models */,
+				3D664A99214FEBB2006A8864 /* Repositories */,
 				3D1B300A214A8911002C1141 /* BookingViewController.swift */,
 				3D1B3011214AA48A002C1141 /* ServicesJsonModel.swift */,
 				3D1B3013214B50EF002C1141 /* ServicesDataModel.swift */,
@@ -303,6 +347,22 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		3D3F2F8A21509AA20047398A /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F2F8B21509AA20047398A /* ServicesUseCaseSpec.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		3D3F2F8F2150A7360047398A /* Adaptors */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F2F902150A7470047398A /* BookingConvertor.swift */,
+			);
+			path = Adaptors;
+			sourceTree = "<group>";
+		};
 		3D42C352214D3AF3006B610B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,10 +391,75 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		3D664A7E214FD5BD006A8864 /* KioskTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D664A87214FD62C006A8864 /* Booking */,
+				3D664A81214FD5BD006A8864 /* Info.plist */,
+			);
+			path = KioskTests;
+			sourceTree = "<group>";
+		};
+		3D664A87214FD62C006A8864 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				3D3F2F8A21509AA20047398A /* UseCase */,
+				3D664A88214FD62C006A8864 /* Models */,
+				3D664A9A214FEBD1006A8864 /* Repositories */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		3D664A88214FD62C006A8864 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D664A8A214FD66B006A8864 /* BookingModelSpec.swift */,
+				3D664A8F214FDC4C006A8864 /* ServiceModelSpec.swift */,
+				3D3F2F8D21509AC00047398A /* ServicesViewModelSpec.swift */,
+				3D664A89214FD66B006A8864 /* KioskTests-Bridging-Header.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D664A8C214FD886006A8864 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D664A8D214FD89B006A8864 /* BookingModel.swift */,
+				3D664A91214FDD36006A8864 /* ServiceModel.swift */,
+				3D67C2D7215099170030925D /* ServicesViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D664A99214FEBB2006A8864 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3D664A9D214FED1A006A8864 /* ServicesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3D664A9A214FEBD1006A8864 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3D664A9B214FEBE9006A8864 /* ServicesRepositorySpec.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3D664A9F214FFCF6006A8864 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3D664AA0214FFD22006A8864 /* ServicesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		83B021CB2B1C3126A6504035 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DD83BB8816260CD74A833E45 /* Pods_Kiosk.framework */,
+				AE8BB32DC9A66475E2915828 /* Pods_KioskTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -350,7 +475,6 @@
 				3D1B2FD5214A6517002C1141 /* Sources */,
 				3D1B2FD6214A6517002C1141 /* Frameworks */,
 				3D1B2FD7214A6517002C1141 /* Resources */,
-				8C0DD9B93EB02EA8F62FC7F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,6 +539,26 @@
 			productReference = 3D1B303C214B68A0002C1141 /* KioskHistoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3D664A7C214FD5BD006A8864 /* KioskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D664A84214FD5BD006A8864 /* Build configuration list for PBXNativeTarget "KioskTests" */;
+			buildPhases = (
+				3406260D54C649B51937883F /* [CP] Check Pods Manifest.lock */,
+				3D664A79214FD5BD006A8864 /* Sources */,
+				3D664A7A214FD5BD006A8864 /* Frameworks */,
+				3D664A7B214FD5BD006A8864 /* Resources */,
+				0BF2DBD4DF538C83FF1D2B27 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D664A83214FD5BD006A8864 /* PBXTargetDependency */,
+			);
+			name = KioskTests;
+			productName = KioskTests;
+			productReference = 3D664A7D214FD5BD006A8864 /* KioskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -440,6 +584,11 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 3D1B2FD8214A6517002C1141;
 					};
+					3D664A7C214FD5BD006A8864 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						TestTargetID = 3D1B2FD8214A6517002C1141;
+					};
 				};
 			};
 			buildConfigurationList = 3D1B2FD4214A6517002C1141 /* Build configuration list for PBXProject "Kiosk" */;
@@ -459,6 +608,7 @@
 				3D1B3018214B51DD002C1141 /* KioskBookingTests */,
 				3D1B3029214B63CC002C1141 /* KioskNetworkTests */,
 				3D1B303B214B68A0002C1141 /* KioskHistoryTests */,
+				3D664A7C214FD5BD006A8864 /* KioskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -498,27 +648,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D664A7B214FD5BD006A8864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8C0DD9B93EB02EA8F62FC7F4 /* [CP] Embed Pods Frameworks */ = {
+		0BF2DBD4DF538C83FF1D2B27 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-KioskTests/Pods-KioskTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kiosk/Pods-Kiosk-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KioskTests/Pods-KioskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3406260D54C649B51937883F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KioskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D2664A5E9F02B59980A02AE0 /* [CP] Check Pods Manifest.lock */ = {
@@ -557,11 +736,17 @@
 				3D93DB81214B963C0004A317 /* ServicesJsonModel.swift in Sources */,
 				3D93DB82214B963C0004A317 /* ServicesDataModel.swift in Sources */,
 				3D6C8DA0214E580E0049E488 /* PriceCalculator.swift in Sources */,
+				3D664A8E214FD89B006A8864 /* BookingModel.swift in Sources */,
+				3D3F2F912150A7470047398A /* BookingConvertor.swift in Sources */,
 				3D93DB83214B963C0004A317 /* HistoryViewController.swift in Sources */,
 				3D93DB86214B963C0004A317 /* APIAdaptor.swift in Sources */,
 				3D2B0EF3214E1C01002FC1A9 /* CustomStepper.swift in Sources */,
+				3D664AA1214FFD22006A8864 /* ServicesUseCase.swift in Sources */,
+				3D664A92214FDD36006A8864 /* ServiceModel.swift in Sources */,
 				3D1B304C214B9A8C002C1141 /* HistoryDataModel.swift in Sources */,
 				3D1B304A214B9A7B002C1141 /* HistoryJsonModel.swift in Sources */,
+				3D664A9E214FED1A006A8864 /* ServicesRepository.swift in Sources */,
+				3D67C2D8215099170030925D /* ServicesViewModel.swift in Sources */,
 				3D664A73214FA377006A8864 /* BookingConfirmationDataModel.swift in Sources */,
 				3D664A71214F6661006A8864 /* BookingConfirmationDateHeaderView.swift in Sources */,
 			);
@@ -591,6 +776,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D664A79214FD5BD006A8864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3F2F8E21509AC00047398A /* ServicesViewModelSpec.swift in Sources */,
+				3D3F2F8C21509AA20047398A /* ServicesUseCaseSpec.swift in Sources */,
+				3D664A90214FDC4C006A8864 /* ServiceModelSpec.swift in Sources */,
+				3D664A8B214FD66B006A8864 /* BookingModelSpec.swift in Sources */,
+				3D664A9C214FEBE9006A8864 /* ServicesRepositorySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -608,6 +805,11 @@
 			isa = PBXTargetDependency;
 			target = 3D1B2FD8214A6517002C1141 /* Kiosk */;
 			targetProxy = 3D1B3041214B68A0002C1141 /* PBXContainerItemProxy */;
+		};
+		3D664A83214FD5BD006A8864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D1B2FD8214A6517002C1141 /* Kiosk */;
+			targetProxy = 3D664A82214FD5BD006A8864 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -910,6 +1112,53 @@
 			};
 			name = Release;
 		};
+		3D664A85214FD5BD006A8864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D913C10FDE4B6FD6A06CA9C /* Pods-KioskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQRPRAG88V;
+				INFOPLIST_FILE = KioskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mb.KioskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KioskTests/Booking/Models/KioskTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiosk.app/Kiosk";
+			};
+			name = Debug;
+		};
+		3D664A86214FD5BD006A8864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6677ED6FC135E27ACAF74B39 /* Pods-KioskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQRPRAG88V;
+				INFOPLIST_FILE = KioskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.mb.KioskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KioskTests/Booking/Models/KioskTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kiosk.app/Kiosk";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -954,6 +1203,15 @@
 			buildConfigurations = (
 				3D1B3044214B68A0002C1141 /* Debug */,
 				3D1B3045214B68A0002C1141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D664A84214FD5BD006A8864 /* Build configuration list for PBXNativeTarget "KioskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D664A85214FD5BD006A8864 /* Debug */,
+				3D664A86214FD5BD006A8864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
